@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Pet.API")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Pets.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Pet.API")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Pet.API")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+add59904de9f460162f6b3711b0fe33fbd297483")]
+[assembly: System.Reflection.AssemblyProductAttribute("Pets.API")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Pets.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

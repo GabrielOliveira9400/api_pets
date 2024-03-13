@@ -8254,26 +8254,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabri\\.nuget\\packages\\": {}
+    "/Users/gabrieloliveira/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\RiderProjects\\Pets\\src\\Pets.API\\Pets.API.csproj",
+      "projectUniqueName": "/Users/gabrieloliveira/projetos/api_pets/src/Pets.API/Pets.API.csproj",
       "projectName": "Pets.API",
-      "projectPath": "C:\\Users\\gabri\\RiderProjects\\Pets\\src\\Pets.API\\Pets.API.csproj",
-      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\RiderProjects\\Pets\\src\\Pets.API\\obj\\",
+      "projectPath": "/Users/gabrieloliveira/projetos/api_pets/src/Pets.API/Pets.API.csproj",
+      "packagesPath": "/Users/gabrieloliveira/.nuget/packages/",
+      "outputPath": "/Users/gabrieloliveira/projetos/api_pets/src/Pets.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/gabrieloliveira/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8286,11 +8284,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -8337,7 +8330,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
