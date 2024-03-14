@@ -22,4 +22,20 @@ public class PetService : IPetService
         return pet;
     }
     
+    public Task<DTOdePetDetails> GetPetDetails(int id)
+    {
+        var pet = _petRepository.GetPetDetails(id);
+        return pet;
+    }
+    
+    public string removePet(int id)
+    {
+        var pet = _petRepository.GetById(id);
+        var result = _petRepository.Remove(pet);
+        if (result)
+        {
+            return "Pet removed successfully";
+        }
+        return "Error removing pet";
+    }
 }

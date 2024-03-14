@@ -1,6 +1,8 @@
-﻿namespace Pets.API.DTOs;
+﻿using Pets.API.Entities;
 
-public class DTOdePet
+namespace Pets.API.DTOs;
+
+public class DTOdePetDetails
 {
     public int Id { get; set; }
     public int OwnerId { get; set; }
@@ -11,4 +13,9 @@ public class DTOdePet
     public double Weight { get; set; }
     public string Description { get; set; }
     public string Picture { get; set; }
+    public List<Vaccine> Vaccines { get; set; }
+    public string breed { get; set; }
+    public string OwnerName { get; set; }
+    public string age { get; set; }
+    
 }

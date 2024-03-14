@@ -11,3 +11,80 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+# GitHub Copilot persisted chat sessions
+/copilot/chatSessions
+# Ignora arquivos de solução
+*.sln
+
+# Ignora arquivos de projeto
+*.csproj
+
+# Ignora pastas de saída
+src/Pets.API/obj/
+src/Pets.API/bin/
+obj/
+
+# Ignora arquivos temporários
+*.tmp
+*.user
+
+# Ignora arquivos de log
+*.log
+
+# Ignora arquivos de cache
+*.nupkg
+
+# Ignora arquivos de cobertura de testes
+coverage/
+
+# Ignora arquivos de configuração específicos do ambiente
+**/appsettings.Development.json
+**/appsettings.Production.json
+
+# Ignora arquivos de documentação
+**/doc/
+
+# Ignora arquivos de teste
+**/tests/
+
+# Ignora arquivos específicos do Visual Studio
+**/.vs/
+
+# Ignora arquivos específicos do Rider
+**/.idea/
+
+# Ignora arquivos específicos do Git
+.git/
+
+# Ignora arquivos de configuração do NuGet
+**/NuGet.config
+
+# Ignora arquivos de configuração do MSBuild
+**/Directory.Build.props
+**/Directory.Build.targets
+
+# Ignora arquivos de configuração do ReSharper
+**/ReSharper.sln
+
+# Ignora arquivos de configuração do SonarQube
+**/sonar-project.properties
+
+# Ignora arquivos de configuração do StyleCop
+**/StyleCop.Settings.xml
+
+# Ignora arquivos de configuração do dotnet-format
+**/.editorconfig
+
+# Ignora arquivos de configuração do dotnet-monitor
+**/dotnet-monitor.json
+
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/

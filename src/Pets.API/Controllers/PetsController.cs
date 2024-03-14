@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Pets.API.Entities;
 using Pets.API.Interfaces.Services;
 
 namespace Pets.API.Controllers
@@ -26,16 +27,34 @@ namespace Pets.API.Controllers
 
         // GET api/<PetsController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IActionResult Get(int id)
         {
             try
             {
                 var pet = _petService.GetPet(id);
-                return pet.Name;
+                return Ok(pet);
             }
             catch (Exception e)
             {
-                return e.Message;
+                return NotFound();
+            }
+        }
+        
+        [HttpGet("details/{id}")]
+        [ProducesResponseType(typeof(Pet), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(typeof(Vaccine), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public IActionResult GetPetDetails(int id)
+        {
+            try
+            {
+                var pet = _petService.GetPetDetails(id);
+                return Ok(pet.Result);
+            }
+            catch (Exception e)
+            {
+                return NotFound();
             }
         }
 
@@ -53,8 +72,18 @@ namespace Pets.API.Controllers
 
         // DELETE api/<PetsController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            try
+            {
+                var result = _petService.removePet(id);
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return NotFound(e);
+            }
         }
+        
     }
 }

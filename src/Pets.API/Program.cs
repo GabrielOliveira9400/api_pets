@@ -5,6 +5,7 @@ using Pets.API.Interfaces.Repositories;
 using Pets.API.Interfaces.Services;
 using Pets.API.Repositories;
 using Pets.API.Services;
+using Users.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
@@ -48,8 +49,12 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddScoped<IVaccineRepository, VaccineRepository>();*/
 builder.Services.AddScoped<IPetRepository, PetRepository>();
 builder.Services.AddScoped<IPetService, PetService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IVaccineRepository, VaccineRepository>();
+builder.Services.AddScoped<IVaccineService, VaccineService>();
 builder.Services.AddDbContext<EntityContext>(options => 
-    options.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=vacina_pets;Trusted_Connection=True;TrustServerCertificate=True;"));
+    options.UseSqlite("Data Source=/Users/gabrieloliveira/projetos/pets.db"));
 
 builder.Services.AddHttpContextAccessor();
 

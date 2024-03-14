@@ -34,6 +34,7 @@ namespace Pets.API.Controllers
         [HttpPut("{id}")]
         public void AtualizarVacinas(int id, [FromBody] string value)
         {
+            
         }
         
         // DELETE api/<VaccinesController>/5
